@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photography Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+        }
+        header {
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            padding: 20px;
+            text-align: center;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 15px;
+            padding: 100px 20px 20px;
+        }
+        .gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            transition: transform 0.3s;
+        }
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Photography Portfolio</h1>
+    </header>
+    <section class="gallery">
+        <img src="https://source.unsplash.com/400x300/?nature,water" alt="Nature Photo">
+        <img src="https://source.unsplash.com/400x300/?city,night" alt="City at Night">
+        <img src="https://source.unsplash.com/400x300/?landscape,mountains" alt="Mountain Landscape">
+        <img src="https://source.unsplash.com/400x300/?ocean,beach" alt="Beach View">
+        <img src="https://source.unsplash.com/400x300/?forest,trees" alt="Forest Scene">
+        <img src="https://source.unsplash.com/400x300/?wildlife,animal" alt="Wildlife">
+    </section>
+    <footer>
+        <p>&copy; 2025 Photography Portfolio. All rights reserved.</p>
+    </footer>
+</body>
+</html>
